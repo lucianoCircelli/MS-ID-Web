@@ -4,10 +4,8 @@
 name: "My workflow"
 
 on: [ push ]
-
-permissions: read-all
-
+permissions: read-all  
 jobs:
- use:
+ steps:
    runs-on: self-hosted
    
