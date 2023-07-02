@@ -2,10 +2,9 @@
 #lucianocircelli@gmail
 
 name: "My workflow"
-
 on: [ push ]
 permissions: read-all  
 jobs:
- steps:
-   runs-on: self-hosted
-   
+  custom-job:
+    runs-on: [self-hosted, linux, x64, gpu]
+    
